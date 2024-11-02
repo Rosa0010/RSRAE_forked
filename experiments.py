@@ -63,27 +63,27 @@ dataname = "./res/" + args.true + "_" + args.loss + "_" + str(args.lambda1) + "_
 if args.true == "fashion":
     _ , (X_test_origin, y_test_origin) = fashion_mnist.load_data()
 elif args.true == "caltech101":
-    with open("../../data/caltech101.data", 'rb') as f:
+    with open("data/caltech101.data", 'rb') as f:
         data = pickle.load(f)
     X_test_origin = data["X"]
     y_test_origin = data["y"]
 elif args.true == "tinyimagenet":
-    with open("../data/tinyimagenet.data", 'rb') as f:
+    with open("data/tinyimagenet.data", 'rb') as f:
         data = pickle.load(f)
     X_test_origin = data["X"]
     y_test_origin = data["y"]
 elif args.true == "tinyimagenetvar":
-    with open("../data/tinyimagenetvar.data", 'rb') as f:
+    with open("data/tinyimagenetvar.data", 'rb') as f:
         data = pickle.load(f)
     X_test_origin = data["Xvar"]
     y_test_origin = data["y"]
 elif args.true == "20news":
-    with open("../data/20news.data", 'rb') as f:
+    with open("data/20news.data", 'rb') as f:
         data = pickle.load(f)
     X_test_origin = data["X"]
     y_test_origin = data["y"]
 elif args.true == "reuters":
-    with open("../data/reuters.data", 'rb') as f:
+    with open("data/reuters.data", 'rb') as f:
         data = pickle.load(f)
     X_test_origin = data["X"]
     y_test_origin = data["y"]
